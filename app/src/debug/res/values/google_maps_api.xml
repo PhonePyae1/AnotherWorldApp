@@ -21,9 +21,9 @@
     string in this file.
 
     Mine
-    AIzaSyDO-594mE2Cmcmhu9m_beFFeAuzAJFIWpM
+    
 
     AIzaSyDuZv23mJZ1m7eiNXf2oWdLqjJXf-gCzAU
     -->
-    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDO-594mE2Cmcmhu9m_beFFeAuzAJFIWpM</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDuZv23mJZ1m7eiNXf2oWdLqjJXf-gCzAU</string>
 </resources>
