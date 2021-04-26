@@ -66,6 +66,4 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMapCli
         startActivity(intent)
         return true
     }
-
-
 }
