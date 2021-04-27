@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1085711319071",
+    "firebase_url": "https://anotherworld-2d5c7-default-rtdb.firebaseio.com",
+    "project_id": "anotherworld-2d5c7",
+    "storage_bucket": "anotherworld-2d5c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085711319071:android:200bfd39bcb906e8ab952a",
+        "android_client_info": {
+          "package_name": "com.company.isekai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085711319071-lsbg3akf8imnnqj7t7182gg7c21q1e99.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMpxja-DwlFCl_CFaWY-KEGymEeuFMlR0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085711319071-lsbg3akf8imnnqj7t7182gg7c21q1e99.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085711319071:android:9d765f3d998e2018ab952a",
+        "android_client_info": {
+          "package_name": "com.example.isekai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085711319071-lsbg3akf8imnnqj7t7182gg7c21q1e99.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMpxja-DwlFCl_CFaWY-KEGymEeuFMlR0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085711319071-lsbg3akf8imnnqj7t7182gg7c21q1e99.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

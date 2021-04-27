@@ -47,7 +47,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMapCli
             LatLng(13.736717,100.523186), LatLng(14.33,5.18))
         val city = LatLngBounds(
                 LatLng(-35.0, 138.58), LatLng(-34.9, 138.61))
-
         mMap.setLatLngBoundsForCameraTarget(city)
         mMap.setOnMapClickListener{
             onMapClick(it)
@@ -58,7 +57,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMapCli
     }
 
     override fun onMapClick(p0: LatLng) {
-        mMap.addMarker(MarkerOptions().position(p0))
+        mMap.addMarker(MarkerOptions().position(p0).title("5"))
+
     }
 
     override fun onMarkerClick(p0: Marker): Boolean {
