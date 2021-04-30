@@ -87,7 +87,7 @@
         android:layout_marginTop="100dp"
         android:layout_marginHorizontal="30dp"
         android:textColor="@color/white"
-        android:text="Next "
+        android:text="Next"
         android:onClick="Login_btn_onClick"/>
 
     <TextView
