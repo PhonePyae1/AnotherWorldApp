@@ -41,7 +41,8 @@
         android:layout_marginHorizontal="30dp"
         android:layout_marginBottom="30dp"
         android:paddingStart="12dp"
-        android:paddingEnd="12dp"/>
+        android:paddingEnd="12dp"
+        android:inputType="text"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -58,7 +59,8 @@
         android:layout_marginHorizontal="30dp"
         android:layout_marginBottom="30dp"
         android:paddingStart="12dp"
-        android:paddingEnd="12dp"/>
+        android:paddingEnd="12dp"
+        android:inputType="text"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -75,7 +77,8 @@
         android:layout_marginHorizontal="30dp"
         android:layout_marginBottom="10dp"
         android:paddingStart="12dp"
-        android:paddingEnd="12dp"/>
+        android:paddingEnd="12dp"
+        android:inputType="textPassword"/>
 
     <Button
         android:layout_width="match_parent"
