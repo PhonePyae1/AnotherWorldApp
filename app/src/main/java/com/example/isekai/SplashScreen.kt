@@ -18,7 +18,7 @@ class SplashScreen : AppCompatActivity() {
 
         handler = Handler()
         handler.postDelayed({
-            val intent = Intent(this,Login::class.java)
+            val intent = Intent(this,LoginPage::class.java)
             startActivity(intent)
             finish()
         },2000)
