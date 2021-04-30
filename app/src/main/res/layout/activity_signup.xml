@@ -29,7 +29,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:hint=" Email"
+        android:hint=" Username"
         android:background="@drawable/signin_input"
         android:drawableStart="@drawable/ic_action_email"
         android:layout_marginHorizontal="30dp"
