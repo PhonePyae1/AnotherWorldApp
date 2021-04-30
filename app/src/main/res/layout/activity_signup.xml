@@ -29,17 +29,26 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="55dp"
+        android:hint=" Email"
         android:background="@drawable/signin_input"
+        android:drawableStart="@drawable/ic_action_email"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        />
 
 
     <EditText
         android:layout_width="match_parent"
+        android:hint=" Password"
         android:layout_height="55dp"
         android:background="@drawable/signin_input"
+        android:drawableStart="@drawable/ic_action_password"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginBottom="150dp"/>
+        android:layout_marginBottom="150dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"/>
 
     <Button
         android:layout_width="match_parent"
@@ -59,11 +68,6 @@
         android:layout_marginHorizontal="100dp"
         android:textColor="#ACB1B4"
         android:layout_marginBottom="10dp" />
-
-
-
-
-
 
 
 </LinearLayout>

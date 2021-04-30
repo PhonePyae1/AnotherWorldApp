@@ -34,6 +34,7 @@ class UploadPage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_upload_page)
 
+
         val btn_choosefile = findViewById<Button>(R.id.button_chooseFiles)
         val btn_upload = findViewById<Button>(R.id.uploadButton)
         input_filename = findViewById<EditText>(R.id.edit_text_name)
