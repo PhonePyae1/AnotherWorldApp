@@ -33,6 +33,16 @@ class UploadPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_upload_page)
+        setSupportActionBar(findViewById(R.id.toolbar))
+        val actionBar = supportActionBar
+
+        if (actionBar != null) {
+            actionBar.title = "Upload"
+        }
+
+        actionBar!!.title="Upload"
+
+        actionBar.setDisplayHomeAsUpEnabled(true)
 
 
         val btn_choosefile = findViewById<Button>(R.id.button_chooseFiles)
@@ -49,9 +59,7 @@ class UploadPage : AppCompatActivity() {
         btn_choosefile.setOnClickListener{
 
             openFileChooser()
-
         }
-
     }
 
     private fun openFileChooser() {

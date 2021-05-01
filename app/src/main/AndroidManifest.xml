@@ -21,7 +21,7 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".UploadPage" android:parentActivityName=".Attractions"/>
+        <activity android:name=".UploadPage" android:parentActivityName=".Attractions" android:theme="@style/Theme.Isekai.NoActionBar"/>
         <activity
             android:name=".Attractions"
             android:label="@string/title_activity_main2"

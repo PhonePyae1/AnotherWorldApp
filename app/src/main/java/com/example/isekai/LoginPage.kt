@@ -15,4 +15,10 @@ class LoginPage : AppCompatActivity() {
         val intent = Intent(this,SignupActivity::class.java)
         startActivity(intent)
     }
+
+    fun AlreadyHaveAccount(view: View) {
+        val intent = Intent(this,SignupActivity::class.java)
+        startActivity(intent)
+    }
+
 }
