@@ -90,14 +90,26 @@
         android:text="Next"
         android:onClick="Login_btn_onClick"/>
 
-    <TextView
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:text="Already have an account? Sign In."
-        android:layout_marginTop="20dp"
-        android:layout_marginHorizontal="100dp"
-        android:textColor="#ACB1B4"
-        android:layout_marginBottom="10dp" />
+            <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="130dp"
+            android:textColor="#ACB1B4"
+            android:layout_marginBottom="1dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="150dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/signIn"
+            android:textAlignment="center"
+            android:textColor="#38B6FF" />
+
+
     </LinearLayout>
 
 </LinearLayout>

@@ -16,4 +16,11 @@ class SignupActivity : AppCompatActivity() {
         val intent = Intent(this,MapsActivity::class.java)
         startActivity(intent)
     }
+
+    fun signUp_Click(view: View) {
+        val intent = Intent(this,LoginPage::class.java)
+        startActivity(intent)
+    }
+
+
 }
