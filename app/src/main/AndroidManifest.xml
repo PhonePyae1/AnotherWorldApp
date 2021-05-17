@@ -17,7 +17,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Isekai">
         <activity android:name=".SignupActivity"/>
-        <activity android:name=".MapsActivity" android:label="@string/title_activity_maps"/>
+        <activity android:name=".MapsActivity" android:label="@string/title_activity_maps">            <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
         <activity android:name=".Login"/>
         <activity android:name=".UploadPage" android:parentActivityName=".Attractions"/>
         <activity
@@ -28,11 +32,7 @@
         <activity
             android:name=".SplashScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <meta-data
