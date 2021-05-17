@@ -5,22 +5,20 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 
-class SignupActivity : AppCompatActivity() {
+class LoginPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_signup)
-
+        setContentView(R.layout.activity_login_page)
     }
 
-    fun signIn_btn_onClick(view: View) {
-        val intent = Intent(this,MapsActivity::class.java)
+    fun Login_btn_onClick(view: View) {
+        val intent = Intent(this,SignupActivity::class.java)
         startActivity(intent)
     }
 
-    fun signUp_Click(view: View) {
-        val intent = Intent(this,LoginPage::class.java)
+    fun AlreadyHaveAccount(view: View) {
+        val intent = Intent(this,SignupActivity::class.java)
         startActivity(intent)
     }
-
 
 }

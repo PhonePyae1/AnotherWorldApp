@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.WindowManager
+import android.widget.Toast
 
 class SplashScreen : AppCompatActivity() {
 
@@ -16,7 +17,7 @@ class SplashScreen : AppCompatActivity() {
 
         handler = Handler()
         handler.postDelayed({
-            val intent = Intent(this,Login::class.java)
+            val intent = Intent(this,SignupActivity::class.java)
             startActivity(intent)
             finish()
         },2000)
