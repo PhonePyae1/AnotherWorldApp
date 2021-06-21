@@ -22,4 +22,11 @@
     <string name="login_failed">"Login failed"</string>
     <string name="signIn"><u>Sign In</u></string>
     <string name="signUp"><u>Sign Up</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_map">Map</string>
+    <string name="title_favorites">Your Favorites</string>
+    <string name="title_profile">Your Profile</string>
+    <string name="title_activity_main">Isekai</string>
+
 </resources>

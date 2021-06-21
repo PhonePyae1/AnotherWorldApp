@@ -110,7 +110,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMapCli
                         )
                 )
                 // Store a data object with the polygon, used here to indicate an arbitrary type.
-                polygon1.tag = "bangna"
+//                polygon1.tag = "bangna"
                 // Style the polygon.
                 val rnd = Random()
                 val rndcolor: Int =
@@ -181,8 +181,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMapCli
         )
         Toast.makeText(this, "Area type ${polygon.tag?.toString()}", Toast.LENGTH_SHORT).show()
     }
-
-
 
     override fun onInfoWindowClick(p0: Marker) {
         Toast.makeText(this,"Info Window",Toast.LENGTH_LONG).show()
