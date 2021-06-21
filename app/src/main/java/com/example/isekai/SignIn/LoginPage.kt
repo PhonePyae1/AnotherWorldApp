@@ -1,9 +1,10 @@
-package com.example.isekai
+package com.example.isekai.SignIn
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.isekai.R
 
 class LoginPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,12 +13,12 @@ class LoginPage : AppCompatActivity() {
     }
 
     fun Login_btn_onClick(view: View) {
-        val intent = Intent(this,SignupActivity::class.java)
+        val intent = Intent(this, SignupActivity::class.java)
         startActivity(intent)
     }
 
     fun AlreadyHaveAccount(view: View) {
-        val intent = Intent(this,SignupActivity::class.java)
+        val intent = Intent(this, SignupActivity::class.java)
         startActivity(intent)
     }
 
