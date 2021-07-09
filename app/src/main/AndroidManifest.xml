@@ -36,11 +36,9 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="${MAPS_API_KEY}" />
 
-        <activity android:name=".SignIn.LoginPage" />
-        <activity android:name=".SignIn.SignupActivity" />
-        <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps" />
+        <activity android:name=".signIn.LoginPage" />
+        <activity android:name=".signIn.SignupActivity" />
+
         <activity
             android:name=".UploadPage"
             android:parentActivityName=".Attractions"
@@ -48,7 +46,7 @@
         <activity
             android:name=".Attractions"
             android:label="@string/title_activity_main2"
-            android:parentActivityName=".MapsActivity"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/Theme.Isekai.NoActionBar" />
         <activity
             android:name=".SplashScreen"

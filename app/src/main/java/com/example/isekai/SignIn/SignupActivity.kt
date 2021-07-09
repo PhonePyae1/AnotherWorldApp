@@ -1,10 +1,10 @@
-package com.example.isekai.SignIn
+package com.example.isekai.signIn
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.example.isekai.MapsActivity
+import com.example.isekai.MainActivity
 import com.example.isekai.R
 
 class SignupActivity : AppCompatActivity() {
@@ -15,7 +15,7 @@ class SignupActivity : AppCompatActivity() {
     }
 
     fun signIn_btn_onClick(view: View) {
-        val intent = Intent(this, MapsActivity::class.java)
+        val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
 

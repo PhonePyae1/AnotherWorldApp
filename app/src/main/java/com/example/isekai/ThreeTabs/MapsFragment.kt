@@ -1,4 +1,4 @@
-package com.example.isekai.ThreeTabs
+package com.example.isekai.threeTabs
 
 import android.content.ContentValues
 import android.content.Intent
@@ -11,7 +11,6 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import com.example.isekai.Attractions
 import com.example.isekai.R
 
@@ -31,7 +30,7 @@ class MapsFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMapClickListene
     private lateinit var database: DatabaseReference
     // [END declare_database_ref]
 
-    fun initializeDbRef() {
+    private fun initializeDbRef() {
         // [START initialize_database_ref]
         // [END initialize_database_ref]
         database = FirebaseDatabase.getInstance().reference;
@@ -98,15 +97,16 @@ class MapsFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMapClickListene
                         .addAll(
                             convert(x.value as String)
                         )
+                        .strokeColor(Color.LTGRAY)
                 )
                 // Store a data object with the polygon, used here to indicate an arbitrary type.
 //                polygon1.tag = "bangna"
                 // Style the polygon.
-                val rnd = Random()
-                val rndcolor: Int =
-                    Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256))
-                polygon1.strokeColor = 0x00ffffff
-                polygon1.fillColor = rndcolor
+//                val rnd = Random()
+//                val rndcolor: Int =
+//                    Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256))
+//                polygon1.strokeColor = 0x5742f5
+//                polygon1.fillColor = rndcolor
             }
         }.addOnFailureListener {
             Log.e("firebase", "Error getting data", it)

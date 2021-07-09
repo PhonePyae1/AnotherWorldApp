@@ -1,4 +1,4 @@
-package com.example.isekai.ThreeTabs
+package com.example.isekai.threeTabs
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

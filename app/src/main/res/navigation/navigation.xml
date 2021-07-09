@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/navigation_map"
-        android:name="com.example.isekai.ThreeTabs.MapsFragment"
+        android:name="com.example.isekai.threeTabs.MapsFragment"
         android:label="@string/title_map"
         tools:layout="@layout/fragment_maps" />
     <fragment
         android:id="@+id/navigation_favorites"
-        android:name="com.example.isekai.ThreeTabs.Favorites"
+        android:name="com.example.isekai.threeTabs.Favorites"
         android:label="@string/title_favorites"
         tools:layout="@layout/fragment_favorites" />
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.example.isekai.ThreeTabs.Profile"
+        android:name="com.example.isekai.threeTabs.Profile"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>

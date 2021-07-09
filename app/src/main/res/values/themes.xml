@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Isekai" parent="Theme.AppCompat.DayNight">
+    <style name="Theme.Isekai" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -19,7 +19,7 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.Isekai.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Isekai.AppBarOverlay" parent="Theme.MaterialComponents.Light.DarkActionBar" />
 
-    <style name="Theme.Isekai.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.Isekai.PopupOverlay" parent="Theme.MaterialComponents.Light.DarkActionBar" />
 </resources>

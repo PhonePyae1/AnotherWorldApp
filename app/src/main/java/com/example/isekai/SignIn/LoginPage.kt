@@ -1,4 +1,4 @@
-package com.example.isekai.SignIn
+package com.example.isekai.signIn
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

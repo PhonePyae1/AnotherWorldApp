@@ -1,5 +1,6 @@
 package com.example.isekai
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.findNavController
@@ -8,6 +9,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.isekai.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.android.synthetic.main.fragment_maps.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,5 +33,12 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+//        addDiary.setOnClickListener {
+//            val intent = Intent(this, NewDiary1::class.java)
+//            startActivity(intent)
+//        }
     }
 }
+
+
