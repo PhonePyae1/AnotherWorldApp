@@ -4,16 +4,16 @@ import android.content.ContentValues
 import android.content.Intent
 import android.content.res.Resources
 import android.graphics.Color
-import androidx.fragment.app.Fragment
-
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.fragment.app.Fragment
 import com.example.isekai.Attractions
 import com.example.isekai.R
-
+import com.example.isekai.writeNewDiary.NewDiary1
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
@@ -21,7 +21,9 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.*
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import kotlinx.android.synthetic.main.fragment_maps.*
 import java.util.*
+
 
 class MapsFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMapClickListener,
     GoogleMap.OnPolygonClickListener, GoogleMap.OnInfoWindowClickListener {
@@ -33,7 +35,7 @@ class MapsFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMapClickListene
     private fun initializeDbRef() {
         // [START initialize_database_ref]
         // [END initialize_database_ref]
-        database = FirebaseDatabase.getInstance().reference;
+        database = FirebaseDatabase.getInstance().reference
     }
     lateinit var marker: Marker
     lateinit var marker1: Marker
@@ -142,6 +144,12 @@ class MapsFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMapClickListene
         super.onViewCreated(view, savedInstanceState)
         val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
         mapFragment?.getMapAsync(this)
+
+//        val addDiary: Button = view.findViewById(R.id.addDiary) as Button
+        addDiary.setOnClickListener {
+            val intent = Intent(activity, NewDiary1::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun convert(x: String): MutableList<LatLng> {

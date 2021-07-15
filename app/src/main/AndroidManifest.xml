@@ -38,7 +38,8 @@
 
         <activity android:name=".signIn.LoginPage" />
         <activity android:name=".signIn.SignupActivity" />
-
+        <activity android:name=".writeNewDiary.NewDiary1"></activity>
+        <activity android:name=".writeNewDiary.NewDiary2" android:parentActivityName=".writeNewDiary.NewDiary1"></activity>
         <activity
             android:name=".UploadPage"
             android:parentActivityName=".Attractions"
