@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewDiary2">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="23dp">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:width="179dp"
+            android:height="47dp"
+            android:background="@drawable/write_cancel_button_shape"
+            android:text="Back"
+            app:backgroundTint="#85000000" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="179dp"
+            android:height="47dp"
+            android:background="@drawable/write_next_button_shape"
+            android:onClick=""
+            android:text="Submit"
+            app:backgroundTint="#38B6FF" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/ic_baseline_add_24"
+        app:backgroundTint="#FFFFFF" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="281dp"
+        android:background="#5B000000" />
+
+    <EditText
+        android:id="@+id/story1"
+        android:layout_width="371dp"
+        android:layout_height="204dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="370dp"
+        android:background="@drawable/write_border_shape"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Details"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:paddingTop="12dp" />
+
+    <EditText
+        android:id="@+id/title1"
+        android:layout_width="371dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/write_border_shape"
+        android:ems="10"
+        android:hint="Diary Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp" />
+
+</FrameLayout>
