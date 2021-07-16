@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BottomNav3Fragments.ProfileFragment">
+    tools:context=".BottomNav3Fragments.HomeFragment">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Profile"
+        android:text="Home"
         android:layout_centerInParent="true"
         android:textSize="40sp"/>
 

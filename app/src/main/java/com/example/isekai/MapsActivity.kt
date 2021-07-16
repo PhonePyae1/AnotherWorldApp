@@ -184,8 +184,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMapCli
 
     override fun onInfoWindowClick(p0: Marker) {
         Toast.makeText(this,"Info Window",Toast.LENGTH_LONG).show()
-        val intent = Intent(this,Attractions::class.java)
-        startActivity(intent)
+
     }
 
     override fun onMapClick(p0: LatLng) {

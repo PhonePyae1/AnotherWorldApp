@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.isekai.HomePage
 import com.example.isekai.MapsActivity
 import com.example.isekai.R
 
@@ -15,7 +16,7 @@ class SignupActivity : AppCompatActivity() {
     }
 
     fun signIn_btn_onClick(view: View) {
-        val intent = Intent(this, MapsActivity::class.java)
+        val intent = Intent(this, HomePage::class.java)
         startActivity(intent)
     }
 
@@ -23,6 +24,4 @@ class SignupActivity : AppCompatActivity() {
         val intent = Intent(this, LoginPage::class.java)
         startActivity(intent)
     }
-
-
 }
