@@ -28,5 +28,6 @@
     <string name="title_diary">Diary</string>
     <string name="title_profile">Profile</string>
     <string name="title_activity_main">Isekai</string>
+    <string name="cancel">Cancel</string>
 
 </resources>
