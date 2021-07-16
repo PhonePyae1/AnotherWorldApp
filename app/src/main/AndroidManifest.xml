@@ -21,7 +21,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Isekai">
-        <activity android:name=".HomePage"></activity>
+        <activity android:name=".david"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".HomePage" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
