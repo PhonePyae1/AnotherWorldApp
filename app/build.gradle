@@ -3,6 +3,8 @@ plugins {
     id 'kotlin-android'
     id 'com.google.gms.google-services'
     id 'com.google.android.secrets-gradle-plugin' version '1.1.0'
+    id 'kotlin-kapt'
+    id 'kotlin-android-extensions'
 }
 
 android {

@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import com.example.isekai.MainActivity
+import com.example.isekai.HomePage
 import com.example.isekai.R
 import kotlinx.android.synthetic.main.activity_new_diary1.*
 
@@ -20,7 +20,7 @@ class NewDiary1 : AppCompatActivity() {
         }
 
         cancelButton.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, HomePage::class.java)
             startActivity(intent)
         }
 
