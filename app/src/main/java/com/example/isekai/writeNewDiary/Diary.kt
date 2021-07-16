@@ -1,4 +1,3 @@
 package com.example.isekai.writeNewDiary
 
-class Diary {
-}
+data class Diary(val location: String, val title: String, val story: String)

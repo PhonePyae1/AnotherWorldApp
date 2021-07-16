@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NewDiary1">
+    tools:context=".writeNewDiary.NewDiary1">
 
     <TextView
         android:id="@+id/textView"
@@ -62,7 +62,7 @@
         android:layout_height="wrap_content" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/location1"
         android:layout_width="365dp"
         android:layout_height="39dp"
         android:background="@drawable/write_border_shape"

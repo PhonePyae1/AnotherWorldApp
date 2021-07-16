@@ -51,7 +51,7 @@
         android:background="#5B000000" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/story1"
         android:layout_width="371dp"
         android:layout_height="204dp"
         android:layout_gravity="center|top"
@@ -65,7 +65,7 @@
         android:paddingTop="12dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/title1"
         android:layout_width="371dp"
         android:layout_height="52dp"
         android:layout_gravity="center|top"
