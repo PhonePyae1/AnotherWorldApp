@@ -21,17 +21,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Isekai">
-        <activity android:name=".david"></activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".HomePage" />
+        <activity android:name=".HomePage"
+            android:theme="@style/Theme.Isekai.NoActionBar"/>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAqpH5xjXR4G_RhWmz0lYk7upNeJEDe2bY" />
+            android:value="AIzaSyBgDlUqj0R2STBwYqnQPrzN9NMeZzKH8Ks" />
 
         <activity
             android:name=".SignIn.LoginPage"
             android:theme="@style/Theme.Isekai.NoActionBar" />
+
         <activity
             android:name=".SignIn.SignupActivity"
             android:theme="@style/Theme.Isekai.NoActionBar" />

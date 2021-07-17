@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".BottomNav3Fragments.HomeFragment">
 
-    <TextView
+    <com.google.android.gms.maps.MapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map_View"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Home"
-        android:layout_centerInParent="true"
-        android:textSize="40sp"/>
+        android:id="@+id/fab_writediary"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="20dp"
+        app:fabSize="normal"
+        app:elevation="6dp"
+        android:src="@drawable/ic_baseline_edit_24"
+        />
 
-</RelativeLayout>
+
+</FrameLayout>

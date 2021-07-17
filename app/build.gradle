@@ -5,8 +5,10 @@ plugins {
     id 'com.google.android.secrets-gradle-plugin' version '1.1.0'
     id 'kotlin-kapt'
     id 'kotlin-android-extensions'
-}
 
+
+}
+apply plugin: "kotlin-android-extensions"
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
@@ -60,6 +62,7 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
 
 
     testImplementation 'junit:junit:4.+'

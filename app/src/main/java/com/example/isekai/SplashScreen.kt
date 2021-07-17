@@ -7,6 +7,7 @@ import android.os.Handler
 import android.view.WindowManager
 import com.example.isekai.SignIn.LoginPage
 import com.example.isekai.SignIn.SignupActivity
+import com.example.isekai.writeNewDiary.NewDiary1
 
 class SplashScreen : AppCompatActivity() {
 
@@ -22,6 +23,5 @@ class SplashScreen : AppCompatActivity() {
             startActivity(intent)
             finish()
         },2000)
-
     }
 }

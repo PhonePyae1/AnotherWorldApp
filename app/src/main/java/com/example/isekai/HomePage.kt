@@ -14,8 +14,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class HomePage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        val david:String
-        val david2:String
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_page)

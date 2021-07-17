@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NewDiary2">
+    tools:context=".writeNewDiary.NewDiary2">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -30,7 +30,6 @@
             android:width="179dp"
             android:height="47dp"
             android:background="@drawable/write_next_button_shape"
-            android:onClick=""
             android:text="Submit"
             app:backgroundTint="#38B6FF" />
     </LinearLayout>

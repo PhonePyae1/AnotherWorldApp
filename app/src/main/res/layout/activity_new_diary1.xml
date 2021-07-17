@@ -15,7 +15,7 @@
         android:layout_marginTop="246dp"
         android:gravity="center|left"
         android:text="What's the Place"
-        android:textColor="@color/blue"
+        android:textColor="@color/black"
         android:textSize="30sp" />
 
     <SearchView
