@@ -1,26 +1,19 @@
 package com.example.isekai.BottomNav3Fragments
 
-import android.content.ContentValues
 import android.content.Intent
-import android.content.res.Resources
+import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.isekai.HomePage
+import androidx.fragment.app.Fragment
 import com.example.isekai.R
 import com.example.isekai.writeNewDiary.NewDiary1
-import com.example.isekai.writeNewDiary.NewDiary2
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
-import com.google.android.gms.maps.MapView
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.LatLngBounds
-import com.google.android.gms.maps.model.MapStyleOptions
-import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_maps.*
 import kotlinx.android.synthetic.main.fragment_home.*
 
@@ -40,7 +33,6 @@ class HomeFragment : Fragment(),OnMapReadyCallback {
             startActivity(intent)
         }
 
-
     }
     override fun onMapReady(googleMap: GoogleMap?) {
         mMap = googleMap ?: return
@@ -51,8 +43,9 @@ class HomeFragment : Fragment(),OnMapReadyCallback {
             LatLng(13.529703902966224, 100.19708192091116),  // SW bounds
             LatLng(14.051180377758067, 100.93179255459721) // NE bounds
         )
-       mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(thailand.center, 10f))
-
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(thailand.center, 10f))
+        mMap.setMinZoomPreference(10.5f)
+        mMap.setMaxZoomPreference(12.0f)
         mMap.setLatLngBoundsForCameraTarget(thailand)
     }
 
