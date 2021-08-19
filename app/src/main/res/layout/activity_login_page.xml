@@ -35,6 +35,7 @@
         android:layout_marginBottom="5dp"/>
 
     <EditText
+        android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@drawable/login_input"
@@ -53,6 +54,7 @@
         android:layout_marginBottom="5dp" />
 
     <EditText
+        android:id="@+id/gmailInput"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@drawable/login_input"
@@ -71,6 +73,7 @@
         android:layout_marginBottom="5dp"/>
 
     <EditText
+        android:id="@+id/passwordInput"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@drawable/login_input"
@@ -81,14 +84,14 @@
         android:inputType="textPassword"/>
 
     <Button
+        android:id="@+id/registerButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/login_button"
         android:layout_marginTop="100dp"
         android:layout_marginHorizontal="30dp"
         android:textColor="@color/white"
-        android:text="Next"
-        android:onClick="Login_btn_onClick"/>
+        android:text="Next" />
 
             <TextView
             android:layout_width="220dp"

@@ -32,7 +32,6 @@ class HomeFragment : Fragment(),OnMapReadyCallback {
             val intent = Intent(activity, NewDiary1::class.java)
             startActivity(intent)
         }
-
     }
     override fun onMapReady(googleMap: GoogleMap?) {
         mMap = googleMap ?: return

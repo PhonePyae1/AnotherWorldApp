@@ -1,10 +1,7 @@
 package com.example.isekai
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.ContactsContract
-import android.view.MenuItem
-import androidx.annotation.Nullable
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.isekai.BottomNav3Fragments.DiaryFragment
 import com.example.isekai.BottomNav3Fragments.HomeFragment
@@ -18,10 +15,18 @@ class HomePage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_page)
 
+        val userId = intent.getStringExtra("user_id")
+        val emailId = intent.getStringExtra("email_id")
+        val data = Bundle()
+        data.putString("myData",userId)
+        data.putString("myData1",emailId)
+
         val homeFragment = HomeFragment()
         val diaryFragment = DiaryFragment()
         val profileFragment = ProfileFragment()
         val bottomNav: BottomNavigationView = findViewById(R.id.bottom_navigation)
+
+        profileFragment.arguments = data
 
         makeCurrentFragment(homeFragment)
 

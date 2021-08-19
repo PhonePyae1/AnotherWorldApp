@@ -27,9 +27,10 @@
 
 
     <EditText
+        android:id="@+id/gmailLoginInput"
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:hint=" Username"
+        android:hint=" Gmail"
         android:background="@drawable/signin_input"
         android:drawableStart="@drawable/ic_action_email"
         android:layout_marginHorizontal="30dp"
@@ -41,6 +42,7 @@
 
 
     <EditText
+        android:id="@+id/passwordLoginInput"
         android:layout_width="match_parent"
         android:hint=" Password"
         android:layout_height="55dp"
@@ -53,14 +55,14 @@
         android:inputType="textPassword"/>
 
     <Button
+        android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/login_button"
         android:layout_marginTop="100dp"
         android:layout_marginHorizontal="30dp"
         android:textColor="@color/white"
-        android:text="Next "
-        android:onClick="signIn_btn_onClick"/>
+        android:text="Login" />
 
     <TextView
         android:layout_width="220dp"
