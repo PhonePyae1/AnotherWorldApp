@@ -7,7 +7,6 @@ import android.text.TextUtils
 import android.view.View
 import android.widget.Toast
 import com.example.isekai.HomePage
-import com.example.isekai.MapsActivity
 import com.example.isekai.R
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.AuthResult

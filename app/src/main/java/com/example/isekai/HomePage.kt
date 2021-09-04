@@ -29,6 +29,7 @@ class HomePage : AppCompatActivity() {
         profileFragment.arguments = data
 
         makeCurrentFragment(homeFragment)
+//        R.id.navigation_diary.setEnabled()
 
         bottomNav.setOnNavigationItemSelectedListener{
             when (it.itemId){
@@ -38,6 +39,24 @@ class HomePage : AppCompatActivity() {
 
             }
             true
+        }
+
+
+        //David: this is to make sure that the diary fragment will be displayed when
+        //user finish submit diary
+        if (intent.extras?.getInt("fragmentToLoad") != null) {
+
+            when (intent.extras?.getInt("fragmentToLoad")) {
+                1 -> {
+                    makeCurrentFragment(diaryFragment)
+                    bottomNav.menu.getItem(1).isChecked = true;
+
+
+                }
+                else -> {
+                }
+
+            }
         }
 
     }

@@ -22,7 +22,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Isekai">
         <activity android:name=".HomePage"
-            android:theme="@style/Theme.Isekai.NoActionBar"/>
+            android:theme="@style/Theme.Isekai.NoActionBar">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -42,15 +48,14 @@
         <activity
             android:name=".SplashScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".writeNewDiary.NewDiary1" />
-        <activity android:name=".writeNewDiary.NewDiary2" />
-
+        <activity android:name=".writeNewDiary.NewDiary2"
+            android:parentActivityName=".writeNewDiary.NewDiary1"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Diary.DiaryDetails"
+            android:parentActivityName=".HomePage"></activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
