@@ -20,7 +20,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Isekai">
+        android:theme="@style/Theme.Isekai.NoActionBar">
         <activity android:name=".HomePage"
             android:theme="@style/Theme.Isekai.NoActionBar">
         <intent-filter>
@@ -42,10 +42,6 @@
             android:name=".SignIn.SignupActivity"
             android:theme="@style/Theme.Isekai.NoActionBar" />
         <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"
-            android:theme="@style/Theme.Isekai.NoActionBar" />
-        <activity
             android:name=".SplashScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
@@ -54,8 +50,7 @@
         <activity android:name=".writeNewDiary.NewDiary2"
             android:parentActivityName=".writeNewDiary.NewDiary1"
             android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".Diary.DiaryDetails"
-            android:parentActivityName=".HomePage"></activity>
+        <activity android:name=".Diary.DiaryDetails" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

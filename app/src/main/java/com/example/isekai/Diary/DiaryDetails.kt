@@ -9,8 +9,6 @@ class DiaryDetails : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_diary_details)
-        supportActionBar!!.title = "Diary"
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
         /**get Data*/
         val intent = intent
@@ -24,5 +22,9 @@ class DiaryDetails : AppCompatActivity() {
         detailLocation.text = location
         detailStory.text = story
         detailImage.loadImage(image, getProgessDrawable(this))
+
+        detailAppBar.setNavigationOnClickListener {
+            finish()
+        }
     }
 }

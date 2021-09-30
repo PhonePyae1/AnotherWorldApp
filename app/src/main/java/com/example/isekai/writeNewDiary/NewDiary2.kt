@@ -33,8 +33,7 @@ class NewDiary2 : AppCompatActivity() {
 //        var progressBar = ProgressBar(this)
 
         backButton.setOnClickListener {
-            val intent = Intent(this, NewDiary1::class.java)
-            startActivity(intent)
+            finish()
         }
 
         val intent = intent
@@ -56,7 +55,7 @@ class NewDiary2 : AppCompatActivity() {
 //            startActivity(intent)
             val intent = Intent(this, HomePage::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-            intent.putExtra("fragmentToLoad", 1);
+            intent.putExtra("fragmentToLoad", 1)
             startActivity(intent)
         }
 
