@@ -2,21 +2,18 @@ package com.example.isekai.BottomNav3Fragments
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
-import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.isekai.Diary.MyDiaryRecyclerViewAdapter
 import com.example.isekai.R
-import com.example.isekai.writeNewDiary.Diary
+import com.example.isekai.Diary.Diary
 import com.example.isekai.writeNewDiary.NewDiary1
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.fragment_diary_list.*
-import kotlinx.android.synthetic.main.fragment_home.*
 
 class DiaryFragment : Fragment() {
     lateinit var mDataBase: DatabaseReference

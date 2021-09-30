@@ -3,10 +3,9 @@ package com.example.isekai.writeNewDiary
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.view.WindowManager
-import android.widget.ImageView
 import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
+import com.example.isekai.Diary.Diary
 import com.example.isekai.HomePage
 import com.example.isekai.R
 import com.google.firebase.database.DatabaseReference

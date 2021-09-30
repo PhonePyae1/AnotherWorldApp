@@ -50,12 +50,12 @@ class HomePage : AppCompatActivity() {
         if (intent.extras?.getInt("fragmentToLoad") != null) {
 
             when (intent.extras?.getInt("fragmentToLoad")) {
-                1 -> {
+                0 -> {
                     makeCurrentFragment(homeFragment)
                     bottomNav.menu.getItem(0).isChecked = true;
                 }
 
-                2 -> {
+                1 -> {
                     makeCurrentFragment(diaryFragment)
                     bottomNav.menu.getItem(1).isChecked = true;
                 }

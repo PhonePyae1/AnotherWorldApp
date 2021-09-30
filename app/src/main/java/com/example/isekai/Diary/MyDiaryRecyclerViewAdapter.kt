@@ -8,13 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.Toast
-import androidx.annotation.NonNull
 
 import com.example.isekai.R
-import com.example.isekai.databinding.FragmentDiaryBinding
-import com.example.isekai.writeNewDiary.Diary
-import com.example.isekai.writeNewDiary.NewDiary1
-import com.google.android.material.internal.ContextUtils.getActivity
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_diary.view.*
 
