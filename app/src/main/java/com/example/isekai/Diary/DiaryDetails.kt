@@ -1,5 +1,6 @@
 package com.example.isekai.Diary
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.isekai.R
@@ -25,6 +26,12 @@ class DiaryDetails : AppCompatActivity() {
 
         detailAppBar.setNavigationOnClickListener {
             finish()
+        }
+
+        detailAppBar.setOnMenuItemClickListener {
+            val intent = Intent(this, EditDiaryDetails::class.java)
+            startActivity(intent)
+            true
         }
     }
 }
