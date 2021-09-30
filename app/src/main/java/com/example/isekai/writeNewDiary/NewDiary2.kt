@@ -26,8 +26,6 @@ class NewDiary2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_diary2)
-        supportActionBar!!.title = "Diary"
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 //        this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
 
 //        var progressBar = ProgressBar(this)
