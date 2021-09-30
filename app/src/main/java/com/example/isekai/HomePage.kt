@@ -1,11 +1,14 @@
 package com.example.isekai
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.isekai.BottomNav3Fragments.DiaryFragment
 import com.example.isekai.BottomNav3Fragments.HomeFragment
 import com.example.isekai.BottomNav3Fragments.ProfileFragment
+import com.example.isekai.writeNewDiary.NewDiary1
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class HomePage : AppCompatActivity() {
@@ -49,7 +52,7 @@ class HomePage : AppCompatActivity() {
             when (intent.extras?.getInt("fragmentToLoad")) {
                 1 -> {
                     makeCurrentFragment(diaryFragment)
-                    bottomNav.menu.getItem(1).isChecked = true;
+                    bottomNav.menu.getItem(1).isChecked = true
 
 
                 }
@@ -59,6 +62,11 @@ class HomePage : AppCompatActivity() {
             }
         }
 
+    }
+
+    fun startNewDiary(view: View) {
+        val intent = Intent(this, NewDiary1::class.java)
+        startActivity(intent)
     }
 
     private fun makeCurrentFragment(fragment: Fragment) = supportFragmentManager.beginTransaction().apply {

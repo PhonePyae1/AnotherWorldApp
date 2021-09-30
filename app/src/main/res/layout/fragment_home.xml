@@ -16,6 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/fab_writediary"
+        android:onClick="startNewDiary"
         android:layout_gravity="end|bottom"
         android:layout_margin="20dp"
         app:fabSize="normal"

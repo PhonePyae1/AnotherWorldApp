@@ -2,8 +2,10 @@ package com.example.isekai.BottomNav3Fragments
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
@@ -14,7 +16,6 @@ import com.example.isekai.writeNewDiary.Diary
 import com.example.isekai.writeNewDiary.NewDiary1
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.fragment_diary_list.*
-import kotlinx.android.synthetic.main.fragment_diary_list.fab_writediary
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class DiaryFragment : Fragment() {
@@ -34,7 +35,6 @@ class DiaryFragment : Fragment() {
         // recyclerAnimals.adapter = mAdapter
         /**getData firebase*/
 
-
     }
 
     override fun onCreateView(
@@ -44,9 +44,6 @@ class DiaryFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_diary_list, container, false)
 
         // Set the adapter
-
-
-
 
 //        if (view is RecyclerView) {
 //            with(view) {
@@ -66,10 +63,30 @@ class DiaryFragment : Fragment() {
         recyclerView1.adapter = mAdapter
         getDiaryData()
 
-        fab_writediary.setOnClickListener{
+        topAppBar.setOnMenuItemClickListener {
             val intent = Intent(activity, NewDiary1::class.java)
             startActivity(intent)
+            true
         }
+
+//        topAppBar.setOnMenuItemClickListener { menuItem ->
+//            when (menuItem.itemId) {
+//                R.id.favorite -> {
+//                    // Handle favorite icon press
+//                    true
+//                }
+//                R.id.search -> {
+//                    // Handle search icon press
+//                    true
+//                }
+//                R.id.more -> {
+//                    // Handle more item (inside overflow menu) press
+//                    true
+//                }
+//                else -> false
+//            }
+//        }
+
     }
 
     private fun getDiaryData() {

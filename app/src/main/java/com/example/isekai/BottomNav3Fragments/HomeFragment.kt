@@ -27,11 +27,10 @@ class HomeFragment : Fragment(),OnMapReadyCallback {
         map_View.onResume()
 
         map_View.getMapAsync(this)
-        fab_writediary.setOnClickListener{
-            val intent = Intent(activity, NewDiary1::class.java)
-            startActivity(intent)
-        }
+
     }
+
+
     override fun onMapReady(googleMap: GoogleMap?) {
         mMap = googleMap ?: return
         mMap.uiSettings.isTiltGesturesEnabled = false
