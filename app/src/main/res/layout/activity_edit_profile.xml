@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditPages.editProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/editlayout0"
+        android:background="#FFFFFF">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/editprofilePic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="146dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/profile"
+            app:civ_border_color="#38B6FF"
+            app:civ_border_width="2dp" />
+
+        <EditText
+            android:id="@+id/editprofileName"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/editprofilePic"
+            android:background="@drawable/login_input"
+            android:layout_marginHorizontal="30dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:hint="Name"/>
+
+        <EditText
+            android:id="@+id/editprofileBio"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/editprofileName"
+            android:background="@drawable/login_input"
+            android:layout_marginHorizontal="30dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:hint="#HashTag"/>
+
+        <EditText
+            android:id="@+id/editprofileExp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/editprofileBio"
+            android:background="@drawable/login_input"
+            android:layout_marginHorizontal="30dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:hint="Experience"/>
+
+        <Button
+            android:id="@+id/btneditprofilesave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_button"
+            android:layout_below="@+id/editprofileExp"
+            android:layout_marginTop="130dp"
+            android:layout_marginHorizontal="30dp"
+            android:textColor="@color/white"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/btneditprofileCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_button"
+            android:layout_below="@+id/btneditprofilesave"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="30dp"
+            android:textColor="@color/white"
+            android:text="Cancel" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
