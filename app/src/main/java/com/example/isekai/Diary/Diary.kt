@@ -2,21 +2,31 @@ package com.example.isekai.Diary
 
 class Diary {
     /**set Data*/
-    var location :String? = null
-    var title:String? = null
-    var story:String? = null
-    var image:String? = null
+    var title: String? = null
+    var image: String? = null
+    var attraction: String? = null
+    var context: String? = null
+    var timeStamp: String? = null
+
     constructor(){}
 
     constructor(
-        location:String?,
-        title:String?,
-        story:String?,
-        image:String?
+        title: String, image: String, attraction: String, context: String, timeStamp: String
     ){
-        this.location = location
         this.title = title
-        this.story = story
         this.image = image
+        this.attraction = attraction
+        this.context = context
+        this.timeStamp = timeStamp
     }
+
+//    fun toMap(): Map<String, Any?> {
+//        return mapOf(
+//            "title" to title,
+//            "image" to image,
+//            "attraction" to attraction,
+//            "context" to context,
+//            "timeStamp" to timeStamp
+//        )
+//    }
 }

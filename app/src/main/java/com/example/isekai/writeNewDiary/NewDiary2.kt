@@ -13,6 +13,9 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import kotlinx.android.synthetic.main.activity_new_diary2.*
 import java.util.*
+import com.google.firebase.database.ServerValue
+import java.text.DateFormat
+import java.text.SimpleDateFormat
 
 
 class NewDiary2 : AppCompatActivity() {
@@ -38,15 +41,28 @@ class NewDiary2 : AppCompatActivity() {
 
         submitButton.setOnClickListener {
 
-            val location = str.toString()
-            val title = title1.text.toString()
-            val story = story1.text.toString()
-            val image = downloadUri.toString()
 
-            database = FirebaseDatabase.getInstance().getReference("Diary")
+            val title = title1.text.toString()
+            val image = downloadUri.toString()
+            val attraction = str.toString()
+            val context = story1.text.toString()
+
+            val dateFormat: DateFormat = SimpleDateFormat("yyyy/MM/dd HH:mm:ss")
+            val date = Date()
+            val timeStamp: String = dateFormat.format(date).toString()
+
+//            val timeStamp = strDate
+
+            val ref = FirebaseDatabase.getInstance().reference
+//            val map: MutableMap<*, *> = HashMap()
+//            map["timestamp"] = ServerValue.TIMESTAMP
+//            ref.child("yourNode").updateChildren(map)
+
+            database = FirebaseDatabase.getInstance().getReference("Diary").push()
 //            val Diary = Diary(location, title, story)
-            val Diary = Diary(location, title, story, image)
-            database.child(location).setValue(Diary)
+            val diary = Diary(title, image, attraction, context, timeStamp)
+            database.setValue(diary)
+//            database.child(timeStamp.toString()).setValue(diary)
 
 //            val intent = Intent(this, HomePage::class.java)
 //            startActivity(intent)

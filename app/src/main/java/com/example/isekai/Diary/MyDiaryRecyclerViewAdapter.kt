@@ -18,7 +18,7 @@ import kotlinx.android.synthetic.main.fragment_diary.view.*
  * [RecyclerView.Adapter] that can display a [PlaceholderItem].
  * TODO: Replace the implementation with code for your data type.
  */
-class MyDiaryRecyclerViewAdapter(var c: Context, val diaryList: ArrayList<Diary>) : RecyclerView.Adapter<MyDiaryRecyclerViewAdapter.ViewHolder>() {
+class MyDiaryRecyclerViewAdapter(var c: Context, private val diaryList: ArrayList<Diary>) : RecyclerView.Adapter<MyDiaryRecyclerViewAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val iv = view.iv as ImageView
@@ -46,16 +46,18 @@ class MyDiaryRecyclerViewAdapter(var c: Context, val diaryList: ArrayList<Diary>
 //            c.startActivity(mIntent)
             Toast.makeText(it.context,"hi",Toast.LENGTH_SHORT).show()
 
-            val location = diaryList[position].location
             val title = diaryList[position].title
-            val story = diaryList[position].story
             val image = diaryList[position].image
+            val attraction = diaryList[position].attraction
+            val context = diaryList[position].context
+            val timeStamp = diaryList[position].timeStamp
 
             val detailIntent = Intent(c, DiaryDetails::class.java)
-            detailIntent.putExtra("location", location)
             detailIntent.putExtra("title", title)
-            detailIntent.putExtra("story", story)
             detailIntent.putExtra("image", image)
+            detailIntent.putExtra("attraction", attraction)
+            detailIntent.putExtra("context", context)
+            detailIntent.putExtra("timeStamp", timeStamp)
             c.startActivity(detailIntent)
         }
     }

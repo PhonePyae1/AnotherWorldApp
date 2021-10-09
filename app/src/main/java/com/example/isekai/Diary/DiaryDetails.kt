@@ -13,17 +13,18 @@ class DiaryDetails : AppCompatActivity() {
 
         /**get Data*/
         val intent = intent
-        val location = intent.getStringExtra("location")
         val title = intent.getStringExtra("title")
-        val story = intent.getStringExtra("story")
         val image = intent.getStringExtra("image")
+        val location = intent.getStringExtra("attraction")
+        val story = intent.getStringExtra("context")
+        val timeStamp = intent.getStringExtra("timeStamp")
 
         /**call text and images*/
         detailTitle.text = title
         detailLocation.text = location
         detailStory.text = story
         detailImage.loadImage(image, getProgessDrawable(this))
-
+        detailDate.text = timeStamp
         detailAppBar.setNavigationOnClickListener {
             finish()
         }
