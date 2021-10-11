@@ -5,7 +5,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
-import com.example.isekai.Diary.Diary
+import com.example.isekai.listDiaries.Diary
 import com.example.isekai.HomePage
 import com.example.isekai.R
 import com.google.firebase.database.DatabaseReference
@@ -13,7 +13,6 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import kotlinx.android.synthetic.main.activity_new_diary2.*
 import java.util.*
-import com.google.firebase.database.ServerValue
 import java.text.DateFormat
 import java.text.SimpleDateFormat
 

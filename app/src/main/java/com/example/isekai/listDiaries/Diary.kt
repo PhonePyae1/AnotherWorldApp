@@ -1,4 +1,4 @@
-package com.example.isekai.Diary
+package com.example.isekai.listDiaries
 
 class Diary {
     /**set Data*/

@@ -1,4 +1,4 @@
-package com.example.isekai.Diary
+package com.example.isekai.listDiaries
 
 import android.content.Context
 import android.widget.ImageView

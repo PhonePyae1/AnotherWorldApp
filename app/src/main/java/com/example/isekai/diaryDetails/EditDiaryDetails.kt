@@ -1,4 +1,4 @@
-package com.example.isekai.Diary
+package com.example.isekai.diaryDetails
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

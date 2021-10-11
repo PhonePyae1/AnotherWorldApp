@@ -50,8 +50,8 @@
         <activity android:name=".writeNewDiary.NewDiary2"
             android:parentActivityName=".writeNewDiary.NewDiary1"
             android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".Diary.DiaryDetails" />
-        <activity android:name=".Diary.EditDiaryDetails" />
+        <activity android:name=".diaryDetails.DiaryDetails" />
+        <activity android:name=".diaryDetails.EditDiaryDetails" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

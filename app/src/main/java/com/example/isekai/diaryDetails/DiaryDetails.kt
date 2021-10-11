@@ -1,8 +1,10 @@
-package com.example.isekai.Diary
+package com.example.isekai.diaryDetails
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.isekai.listDiaries.getProgessDrawable
+import com.example.isekai.listDiaries.loadImage
 import com.example.isekai.R
 import kotlinx.android.synthetic.main.activity_diary_details.*
 

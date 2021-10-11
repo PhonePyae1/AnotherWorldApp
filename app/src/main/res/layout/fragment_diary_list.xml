@@ -30,8 +30,9 @@ tools:context=".BottomNav3Fragments.DiaryFragment">
         android:name="com.example.isekai.Diary.DiaryFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        app:layoutManager="LinearLayoutManager"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:listitem="@layout/fragment_diary">
+        tools:listitem="@layout/fragment_diary_card">
 
     </androidx.recyclerview.widget.RecyclerView>
 

@@ -1,4 +1,4 @@
-package com.example.isekai.Diary
+package com.example.isekai.listDiaries
 
 import android.content.Context
 import android.content.Intent
@@ -10,6 +10,8 @@ import android.widget.ImageView
 import android.widget.Toast
 
 import com.example.isekai.R
+import com.example.isekai.diaryDetails.DiaryDetails
+import com.example.isekai.listCity.CityAdapter
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_diary.view.*
 

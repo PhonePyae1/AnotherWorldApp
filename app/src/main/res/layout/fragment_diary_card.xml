@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12sp"
+        android:text="Bangkok, Thailand"
+        android:textColor="#5AC8FA"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        app:cardBackgroundColor="#f3f3f3"
+        app:cardElevation="8dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_sub_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/fragment_diary"
+            />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
