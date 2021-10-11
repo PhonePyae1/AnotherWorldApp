@@ -41,7 +41,7 @@ class NewDiary2 : AppCompatActivity() {
 
         submitButton.setOnClickListener {
 
-
+            val city = "Bangkok, Thailand"
             val title = title1.text.toString()
             val image = downloadUri.toString()
             val attraction = str.toString()
@@ -58,7 +58,8 @@ class NewDiary2 : AppCompatActivity() {
 //            map["timestamp"] = ServerValue.TIMESTAMP
 //            ref.child("yourNode").updateChildren(map)
 
-            database = FirebaseDatabase.getInstance().getReference("Diary").push()
+            database = FirebaseDatabase.getInstance().getReference("Diary").child(city).push()
+//            database = FirebaseDatabase.getInstance().getReference("Diary").push()
 //            val Diary = Diary(location, title, story)
             val diary = Diary(title, image, attraction, context, timeStamp)
             database.setValue(diary)
