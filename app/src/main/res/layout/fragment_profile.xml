@@ -3,8 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".BottomNav3Fragments.ProfileFragment"
     android:background="#EFEFF4">
+
+
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -13,6 +17,7 @@
         android:background="#FFFFFF">
 
         <TextView
+            android:id="@+id/editProfileBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -21,32 +26,68 @@
             android:textColor="@color/blue"
             />
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="220dp"
-        android:id="@+id/profilePicture"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout0"
         android:layout_below="@id/layout1"
+        android:background="#FFFFFF">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePic"
+            app:civ_border_color="#38B6FF"
+            app:civ_border_width="2dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="151dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/profile" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profilePicture"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/layout0"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp"
         android:background="#FFFFFF">
 
         <TextView
             android:id="@+id/profileName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="Phone Pyae"
-            android:textSize="25sp"
+            android:layout_width="283dp"
+            android:layout_height="46dp"
+            android:layout_above="@+id/profileHashtag"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="61dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="67dp"
+            android:layout_marginBottom="14dp"
+            android:gravity="center"
+            android:text="Loading..."
             android:textColor="@color/black"
-            />
+            android:textSize="25sp" />
+
         <TextView
             android:id="@+id/profileHashtag"
-            android:layout_below="@+id/profileName"
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="somehashtag"
-            android:textSize="15sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="158dp"
+            android:layout_marginEnd="173dp"
+            android:layout_marginBottom="21dp"
+            android:gravity="center"
+            android:text="Loading..."
             android:textColor="#979797"
-            />
+            android:textSize="15sp" />
 
     </RelativeLayout>
 
@@ -86,6 +127,7 @@
         android:layout_marginTop="2dp">
 
         <TextView
+            android:id="@+id/experience"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"

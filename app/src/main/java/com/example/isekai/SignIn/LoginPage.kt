@@ -15,11 +15,12 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 
 class LoginPage : AppCompatActivity() {
+    private lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login_page)
 
-        registerButton.setOnClickListener {
+        setContentView(R.layout.activity_login_page)
+        registerButton1.setOnClickListener {
             when {
                 TextUtils.isEmpty(gmailInput.text.toString().trim{it<= ' '}) -> {
                     Toast.makeText(
@@ -41,15 +42,15 @@ class LoginPage : AppCompatActivity() {
                         OnCompleteListener<AuthResult> {
                             task ->
                             if (task.isSuccessful) {
-                                val firebaseUser: FirebaseUser = task.result!!.user!!
-
-                                Toast.makeText(this,"You are registered successful",Toast.LENGTH_SHORT).show()
-
-                                val intent = Intent(this, HomePage::class.java)
-                                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                intent.putExtra("user_id",firebaseUser.uid)
-                                intent.putExtra("email_id",email)
-                                startActivity(intent)
+                                FirebaseAuth.getInstance().currentUser?.sendEmailVerification()?.addOnCompleteListener { task->
+                                    if (task.isSuccessful){
+                                        val intent = Intent(this, SignupActivity::class.java)
+                                        Toast.makeText(this,"You are registered successful and emailed",Toast.LENGTH_SHORT).show()
+                                        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                                        startActivity(intent)
+                                        finish()
+                                    }
+                                }
                             }else {
                                 Toast.makeText(this,task.exception!!.message.toString(),Toast.LENGTH_SHORT).show()
                             }
@@ -59,6 +60,8 @@ class LoginPage : AppCompatActivity() {
             }
         }
     }
+
+
     fun AlreadyHaveAccount(view: View) {
         onBackPressed()
     }

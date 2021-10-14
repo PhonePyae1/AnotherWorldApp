@@ -1,8 +1,11 @@
 package com.example.isekai
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
+import android.widget.CompoundButton
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.isekai.BottomNav3Fragments.DiaryFragment
@@ -10,6 +13,8 @@ import com.example.isekai.BottomNav3Fragments.HomeFragment
 import com.example.isekai.BottomNav3Fragments.ProfileFragment
 import com.example.isekai.writeNewDiary.NewDiary1
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.android.synthetic.main.activity_signup.*
+
 
 class HomePage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,21 +23,14 @@ class HomePage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_page)
 
-        val userId = intent.getStringExtra("user_id")
-        val emailId = intent.getStringExtra("email_id")
-        val data = Bundle()
-        data.putString("myData",userId)
-        data.putString("myData1",emailId)
 
         val homeFragment = HomeFragment()
         val diaryFragment = DiaryFragment()
         val profileFragment = ProfileFragment()
         val bottomNav: BottomNavigationView = findViewById(R.id.bottom_navigation)
 
-        profileFragment.arguments = data
 
         makeCurrentFragment(homeFragment)
-//        R.id.navigation_diary.setEnabled()
 
         bottomNav.setOnNavigationItemSelectedListener{
             when (it.itemId){
@@ -45,8 +43,8 @@ class HomePage : AppCompatActivity() {
         }
 
 
-        //David: this is to make sure that the diary fragment will be displayed when
-        //user finish submit diary
+        //David: this is to make sure that the diary fragment will jump back/ be displayed
+        // correctly when the user finish submit diary
         if (intent.extras?.getInt("fragmentToLoad") != null) {
 
             when (intent.extras?.getInt("fragmentToLoad")) {
