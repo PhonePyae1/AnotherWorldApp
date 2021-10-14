@@ -46,7 +46,7 @@ class MyDiaryRecyclerViewAdapter(var c: Context, private val diaryList: ArrayLis
 //            mIntent.putExtra("name", name)
 //            mIntent.putExtra("info", info)
 //            c.startActivity(mIntent)
-            Toast.makeText(it.context,"hi",Toast.LENGTH_SHORT).show()
+//            Toast.makeText(it.context,"hi",Toast.LENGTH_SHORT).show()
 
             val title = diaryList[position].title
             val image = diaryList[position].image
